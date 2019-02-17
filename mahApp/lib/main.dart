@@ -5,8 +5,6 @@ import 'ui/wallboard/WallboardScreen.dart';
 
 void main() => runApp(MyApp());
 
-
-
 class MyApp extends StatefulWidget {
   // This widget is the root of your application.
 
