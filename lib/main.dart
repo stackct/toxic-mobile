@@ -27,29 +27,11 @@ class MyAppState extends State<MyApp> {
       theme: UITheme.appTheme,
       home: Scaffold(
         appBar: AppBar(title: Text(_scaffoldAppBarTitle),),
-        drawer: buildHamburgerMenu(),
         body: WallboardScreen(),
       ),
       supportedLocales: [
         const Locale('en', 'US'),
       ],
-    );
-  }
-
-  StatelessWidget buildHamburgerMenu() {
-    return Drawer(
-      child: ListView(
-        padding: EdgeInsets.zero,
-        children: <Widget>[
-        UserAccountsDrawerHeader(
-          accountEmail: Text("Stu"),
-          accountName: Text("toxic@stackct.com"),
-          currentAccountPicture: Container( decoration:BoxDecoration(image: DecorationImage(image: ExactAssetImage('assets/face.png')), shape: BoxShape.circle ))),
-        ListTile(title: Text("Wallboard"),),
-        ListTile(title: Text("Dashboard"),),
-        ListTile(title: Text("Projects"),),
-        ListTile(title: Text("About"),)
-      ],),
     );
   }
 }

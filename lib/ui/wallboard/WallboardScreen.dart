@@ -22,7 +22,7 @@ class WallboardScreen extends StatefulWidget {
 
 class WallboardState extends State<WallboardScreen> {
 
-  static String APP_BAR_TITLE = "Wallboard";
+  static const String APP_BAR_TITLE = "Wallboard";
   List<Job> _jobs;
 
   WallboardState(List<Job> jobs){
