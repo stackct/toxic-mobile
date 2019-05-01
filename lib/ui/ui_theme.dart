@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class UITheme {
   static final ThemeData appTheme = ThemeData.light().copyWith(
-      primaryColor: TOXIC_RED,
-      primaryColorDark: TOXIC_RED_ALT,
+      primaryColor: TOXIC_GREEN,
+      primaryColorDark: TOXIC_GREEN_ALT,
       accentColor: Colors.blue);
 
   static const Color TOXIC_GREEN = Color.fromARGB(255, 0, 166, 90);
