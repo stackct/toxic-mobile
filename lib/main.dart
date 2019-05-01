@@ -16,17 +16,17 @@ class MyApp extends StatefulWidget {
 }
 
 class MyAppState extends State<MyApp> {
-
   String _scaffoldAppBarTitle = WallboardState.APP_BAR_TITLE;
 
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
       title: 'Flutter Demo',
       theme: UITheme.appTheme,
       home: Scaffold(
-        appBar: AppBar(title: Text(_scaffoldAppBarTitle),),
+        appBar: AppBar(
+          title: Text(_scaffoldAppBarTitle),
+        ),
         body: WallboardScreen(),
       ),
       supportedLocales: [

@@ -11,21 +11,19 @@ import 'package:Toxic/ui/wallboard/widgets/JobTile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-
 void main() {
-
   // -------------- WIDGET TESTS --------------
 
   testWidgets('Should display successful build', (WidgetTester tester) async {
-
-    var job = Job("001", "STACK", "lol some details", JobStatus.COMPLETED, 0, 0);
+    var job =
+        Job("001", "STACK", "lol some details", JobStatus.COMPLETED, 0, 0);
     await tester.pumpWidget(MaterialApp(home: JobTile(job)));
 
     var jobTile = find.widgetWithText(JobTile, 'STACK.job-001');
     JobTileState state = tester.state(jobTile);
 
     expect(jobTile, findsOneWidget);
-    expect(state.color , UITheme.TOXIC_GREEN);
+    expect(state.color, UITheme.TOXIC_GREEN);
   });
 
   // -------------- STATE TESTS --------------
@@ -89,7 +87,8 @@ void main() {
   });
 
   test('Should have yellow background for job after failed build', () {
-    var job = Job("001", "STACK", "", JobStatus.RUNNING, 0, 0, prevBuildFailed: 1);
+    var job =
+        Job("001", "STACK", "", JobStatus.RUNNING, 0, 0, prevBuildFailed: 1);
     var jobTileState = JobTileState(job);
     expect(jobTileState.color, UITheme.TOXIC_YELLOW);
     expect(jobTileState.textColor, Colors.white);
@@ -99,5 +98,4 @@ void main() {
     expect(jobTileState.color, UITheme.TOXIC_YELLOW);
     expect(jobTileState.textColor, Colors.white);
   });
-
 }
