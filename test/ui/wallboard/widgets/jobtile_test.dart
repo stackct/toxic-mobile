@@ -5,9 +5,9 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
-import 'package:Toxic/data/toxic_server/Job.dart';
-import 'package:Toxic/ui/UITheme.dart';
-import 'package:Toxic/ui/wallboard/widgets/JobTile.dart';
+import 'package:Toxic/data/toxic_server/job.dart';
+import 'package:Toxic/ui/ui_theme.dart';
+import 'package:Toxic/ui/wallboard/widgets/job_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

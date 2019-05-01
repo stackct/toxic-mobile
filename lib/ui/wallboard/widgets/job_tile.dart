@@ -1,5 +1,5 @@
-import 'package:Toxic/data/toxic_server/Job.dart';
-import 'package:Toxic/ui/UITheme.dart';
+import 'package:Toxic/data/toxic_server/job.dart';
+import 'package:Toxic/ui/ui_theme.dart';
 import 'package:flutter/material.dart';
 
 class JobTile extends StatefulWidget {

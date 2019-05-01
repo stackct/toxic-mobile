@@ -1,4 +1,4 @@
-import 'package:Toxic/data/toxic_server/Job.dart';
+import 'package:Toxic/data/toxic_server/job.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

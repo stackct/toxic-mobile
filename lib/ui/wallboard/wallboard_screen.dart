@@ -1,5 +1,5 @@
-import 'package:Toxic/data/toxic_server/Job.dart';
-import 'package:Toxic/ui/wallboard/widgets/JobTile.dart';
+import 'package:Toxic/data/toxic_server/job.dart';
+import 'package:Toxic/ui/wallboard/widgets/job_tile.dart';
 import 'package:flutter/material.dart';
 
 class WallboardScreen extends StatefulWidget {

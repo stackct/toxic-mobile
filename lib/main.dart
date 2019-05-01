@@ -1,7 +1,7 @@
-import 'package:Toxic/ui/UITheme.dart';
-import 'package:Toxic/ui/wallboard/WallboardScreen.dart';
+import 'package:Toxic/ui/ui_theme.dart';
+import 'package:Toxic/ui/wallboard/wallboard_screen.dart';
 import 'package:flutter/material.dart';
-import 'ui/wallboard/WallboardScreen.dart';
+import 'ui/wallboard/wallboard_screen.dart';
 
 void main() => runApp(MyApp());
 
