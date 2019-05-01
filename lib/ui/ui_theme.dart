@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class UITheme {
-  static final ThemeData appTheme = ThemeData.light().copyWith(
+  static final ThemeData appTheme = ThemeData(
+      brightness: Brightness.light,
       primaryColor: TOXIC_GREEN,
       primaryColorDark: TOXIC_GREEN_ALT,
       accentColor: Colors.blue);

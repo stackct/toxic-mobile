@@ -36,10 +36,10 @@ class MyApp extends StatelessWidget {
           accountEmail: Text("Stu"),
           accountName: Text("toxic@stackct.com"),
           currentAccountPicture: Container( decoration:BoxDecoration(image: DecorationImage(image: ExactAssetImage('assets/face.png')), shape: BoxShape.circle ))),
-        ListTile(title: Text("Wallboard"),),
-        ListTile(title: Text("Dashboard"),),
-        ListTile(title: Text("Projects"),),
-        ListTile(title: Text("About"),)
+        ListTile(leading: Icon(Icons.trending_up), title: Text("Wallboard"),),
+        ListTile(leading: Icon(Icons.desktop_mac), title: Text("Dashboard"),),
+        ListTile(leading: Icon(Icons.view_list), title: Text("Projects"),),
+        ListTile(leading: Icon(Icons.info_outline), title: Text("About"),),
       ],),
     );
   }
